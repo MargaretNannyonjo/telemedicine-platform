@@ -9,7 +9,7 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = "sk-proj-VnOT67Y2IXe0AlmeFAV3T3BlbkFJXttfGKu6DxFDwDrpITgZ";
+const API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
 export default function AskQuestion() {
   const [typing, setTyping] = useState(false);
