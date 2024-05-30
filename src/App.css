@@ -1,38 +1,289 @@
-.App {
-  text-align: center;
+.homePage {
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.homeDetails-section1 {
+  margin: 0 auto;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    #020024 0%,
+    #094979e2 35%,
+    #036197 42%,
+    #03a9ca 100%
+  );
+  min-height: 200px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  grid-gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.homeDetails-section1 img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.consult-btn {
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.consult-btn:hover {
+  background-color: #020024;
+  transition: all 0.3s ease-in-out;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-div {
+  background-color: #ebeaea;
+  width: 80%;
+  min-height: 200px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 2rem;
+  justify-content: center;
+  align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.viewSpecialists {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  h6 {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.viewAll {
+  color: #036197;
+}
+
+.viewAll:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.homeDetails-section2 {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 0.2fr));
+  box-sizing: border-box;
+  grid-gap: 20px; /* Ensure there's a gap to prevent overlapping */
+  width: 100%; /* Ensure container is wide enough */
+  padding: 20px;
+}
+
+.specialists {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px #00000033;
+
+  .icon {
+    padding: 5px;
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
+    margin-top: 10px;
   }
+
+  h6 {
+    margin-top: 2rem;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .span-text {
+    color: #a8a4a4;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .amount {
+    margin-left: 25px;
+    color: #025e02;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-bottom: 1px;
+  }
+}
+
+.homeDetails-section3 {
+  width: 35%;
+  min-height: 200px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tests {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.tests-available {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.flex-tests {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fonticon {
+  color: #036197;
+}
+
+.spanicon {
+  color: #025e02;
+  font-weight: bold;
+}
+
+.consultations {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  .consult-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.doctors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.doctor {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #a8a4a4;
+  border-radius: 5px;
+
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+.doctor img {
+  width: 120px;
+  height: 120px;
+  margin-right: 15px;
+}
+.consult-p {
+  color: #036197;
+  cursor: pointer;
+}
+
+.consult-p:hover {
+  color: #020024;
+  text-decoration: underline;
+}
+.arrow {
+  font-size: 0.7rem;
+  margin-left: 4px;
+}
+
+.appointments {
+  margin-top: 3rem;
+}
+
+.appointmentsAllTogether {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.appointment-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputs .form-group {
+  margin-bottom: 15px;
+}
+
+.radio-label {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.radio-label input {
+  margin-right: 5px;
+}
+
+.calendar {
+  margin: 15px 0;
+}
+
+.flexCare {
+  margin-top: 20px;
+}
+
+.noUser {
+  text-align: center;
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #025686;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.submit:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #03a9ca;
 }
