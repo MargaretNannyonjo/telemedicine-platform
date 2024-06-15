@@ -1,3 +1,12 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
 .homePage {
   margin: 20px;
 }
@@ -67,6 +76,68 @@
   h6 {
     margin-top: 20px;
     margin-bottom: 0;
+  }
+}
+
+.headline-lg {
+  font-family: "Tobias Bold";
+  line-height: 1;
+  letter-spacing: -0.05rem;
+  color: #004a7d;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+
+  @media (max-width: 575.98px) {
+    font-size: 3.2rem;
+  }
+}
+
+.care {
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 30px;
+
+  .careAvailable {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .getCare {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .getCare h4 {
+    font-size: 1.2rem;
+  }
+
+  .card-footer {
+    margin-top: 20px;
+    color: #004a7d;
+    cursor: pointer;
+  }
+  .card-footer:hover {
+    text-decoration: underline;
+  }
+
+  .insurance-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #004a7d;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -176,6 +247,62 @@
 .spanicon {
   color: #025e02;
   font-weight: bold;
+}
+
+.why-virtualCare {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-color: #f9f9f9;
+
+  .reasons {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .reasonCard {
+    padding: 20px;
+  }
+
+  .reasonCard img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+.how-it-works {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+
+  h6 {
+    color: #004a7d;
+    font-size: 1.3rem;
+    margin-left: 20px;
+  }
+
+  h3 {
+    color: #004a7d;
+    padding: 20px;
+  }
+
+  p {
+    margin-left: 3rem;
+  }
+
+  .number {
+    background-color: #03a9ca;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .consultations {
