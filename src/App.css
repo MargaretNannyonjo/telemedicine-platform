@@ -160,8 +160,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 0.2fr));
   box-sizing: border-box;
-  grid-gap: 20px; /* Ensure there's a gap to prevent overlapping */
-  width: 100%; /* Ensure container is wide enough */
+  grid-gap: 20px;
+  width: 100%;
   padding: 20px;
 }
 

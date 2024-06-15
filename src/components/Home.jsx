@@ -49,6 +49,11 @@ export default function Home() {
             We accept most insurance,
           </span>
           {""} which means your visit could be free.
+          <a href="#how-it-works">
+            <button className="insurance-btn">
+              How it works{""} <i class="fa-solid fa-arrow-down"></i>
+            </button>
+          </a>
         </p>
       </div>
       <div className="care">
@@ -249,7 +254,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="how-it-works">
+        <div className="how-it-works" id="how-it-works">
           <h3>HOW IT WORKS</h3>
 
           <h6>
