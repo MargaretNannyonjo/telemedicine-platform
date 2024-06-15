@@ -4,6 +4,7 @@ import doctorPatient from "../images/doctor-patient.jpeg";
 import review from "../images/review.jpg";
 import confidential from "../images/confidential.jpeg";
 import Consultations from "./Consultations";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -288,8 +289,10 @@ export default function Home() {
             or clinician who will diagnose your symptoms and offer a custom
             treatment plan. If needed, you can get prescriptions sent to you.
           </p>
+          <button className="insurance-btn">Get started now</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

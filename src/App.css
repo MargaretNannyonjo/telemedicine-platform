@@ -128,17 +128,22 @@ body {
   .card-footer:hover {
     text-decoration: underline;
   }
+}
+.insurance-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #004a7d;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-top: 20px;
+}
 
-  .insurance-btn {
-    display: block;
-    margin: 0 auto;
-    background-color: #004a7d;
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin-top: 20px;
-  }
+.insurance-btn:hover {
+  background-color: #036197;
+  transition: all ease-in-out 0.3s;
+  border-radius: 5px;
 }
 
 .viewAll {
@@ -267,6 +272,11 @@ body {
 
   .reasonCard {
     padding: 20px;
+  }
+
+  .reasonCard h5 {
+    color: #004a7d;
+    margin-top: 10px;
   }
 
   .reasonCard img {
@@ -413,4 +423,63 @@ body {
 .submit:hover {
   transition: all 0.3s ease-in-out;
   background-color: #03a9ca;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 30px;
+
+  .footer-details {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer-div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .flex-items {
+    color: #004a7d;
+  }
+
+  .icons {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .flex-icons {
+    margin-right: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .flex-icons:hover {
+    color: #036197;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .subscribe {
+    margin-top: 30px;
+  }
+
+  .subscribe p {
+    color: #004a7d;
+  }
+
+  .subscribe button {
+    color: #fff;
+    background-color: #004a7d;
+    border: none;
+    padding: 2px;
+  }
+  .app {
+    font-weight: bold;
+  }
 }
