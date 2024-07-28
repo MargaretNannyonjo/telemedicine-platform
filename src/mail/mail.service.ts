@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { env } from 'process';
 import { generateWelcomeEmail } from './email_template/welcome_email';
 import { requestUserAccessKeyEmail } from './email_template/request_access_key';
+import * as nodemailer from 'nodemailer';
 
 @Injectable()
 export class MailService {

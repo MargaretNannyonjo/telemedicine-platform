@@ -61,7 +61,7 @@ export class renewAccessTokenDto {
 
   @IsString()
   @IsNotEmpty()
-  id: number;
+  id: string;
 }
 
 export class resetPasswordDto {

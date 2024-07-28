@@ -9,6 +9,8 @@ import { RolesModule } from './roles/roles.module';
 import { AuthModule } from './auth/auth.module';
 import { MailModule } from './mail/mail.module';
 import { MailService } from './mail/mail.service';
+import { JwtTokenModule } from './jwt/jwt.module';
+import { JwtTokenService } from './jwt/jwt.service';
 
 @Module({
   imports: [
@@ -17,8 +19,15 @@ import { MailService } from './mail/mail.service';
     RolesModule,
     AuthModule,
     MailModule,
+    JwtTokenModule,
   ],
   controllers: [AppController],
-  providers: [PrismaService, AuthService, RolesService, MailService],
+  providers: [
+    PrismaService,
+    AuthService,
+    RolesService,
+    MailService,
+    JwtTokenService,
+  ],
 })
 export class AppModule {}
